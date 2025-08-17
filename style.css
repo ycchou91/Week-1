@@ -1,0 +1,199 @@
+/*引入字體，一般都會放在最上面，如果是用@的要放在CSS檔案裏面，但是如果用LINK就放在html裡面*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*顏色變數設定，要用兩個-做開頭，不然會無法顯示*/
+:root{
+  --primary-100:#F5FEE7;
+  --primary-400:#57A203;
+  --neutral-0:#ffffff;
+  --neutral-100:#f8f9fa;
+  --neutral-300:#dee2e6;
+  --neutral-600:#6c757d;
+  --neutral-900:#212529;
+  }
+
+
+/*標籤基本樣式*/
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+img{
+  vertical-align: middle; /*中間對其→就能清除圖片下方2-3px*/
+}
+
+a{
+  color: var(--primary-400);
+  text-underline-offset: 4px;/*底線下移4PX*/
+  display: block; /*設定成區塊元素，因為每一行都是獨立*/
+}
+
+body{
+  font-family:'Noto Sans TC',serif ;/*設定字體*/
+  font-size: 16px;
+  line-height: 1.5;/*行高1.5倍*/
+ letter-spacing: 0.05rem;/*字體間距*/
+ color: var(--neutral-900);
+  /*color: #212529;*/
+}
+
+.container{
+width: 856px;
+margin:  0 auto;
+}
+
+
+.h1{
+  font-size: 40px;  /*看figma的設定去做調整*/
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.h3{
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.h4{
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.h5{
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.text-sm{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.text-white{
+  color: var(--neutral-0); /*用變數的概念去設定，這樣原始顏色可以直接寫在同一區，整個顏色可以在單一處進行修改*/
+}
+
+.text-neutral-600{
+  color: var(--neutral-600);
+}
+
+
+.text-primary-400{
+  color: var(--primary-400);
+}
+.background-primary-100{
+  background-color: var(--primary100);
+}
+
+.background-neutral-100{
+  background-color: var(--neutral-100);
+}
+
+
+.pall-32{
+  padding: 32px;     
+}/*全推*/
+
+.py-8{
+  padding-top: 8px;        
+  padding-bottom: 8px;
+} /*Y軸上下推*/
+
+.py-64{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+
+.pb-48{                 
+  padding-bottom: 48px;
+}/*下底推*/
+
+.pr-8{
+padding-right: 8px;
+
+}
+
+.mb-4{
+  margin-bottom: 4px;
+}
+
+.mb-12{
+  margin-bottom: 12px;
+}
+
+.mb-16{
+  margin-bottom: 16px;
+}
+
+.mb-24{
+  margin-bottom: 24px;
+}
+
+
+.mb-48{
+  margin-bottom: 48px;
+}
+
+/*page*/
+.header{
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week1/about.png);
+  background-repeat: no-repeat; /*背景不重複*/
+  background-size: cover;/*全面填滿*/
+  background-position: center;
+  padding: 152px 0 ;  /*(400-96)/2=152px*/
+  text-align: center;
+}
+
+.eng-title{
+  font-size: 28px;
+}
+
+
+.quote{
+border-radius: 12px;
+text-align: center;
+}
+
+.intro img{
+  width: 1076px;
+  margin-left: -110px;
+  margin-right: -110px;
+}/*讓圖片可以比原有的container還要大*/
+
+
+.section-lined{
+  border-bottom: 1px solid var(--neutral-300);
+}
+
+.history-dec{
+  border-left: 1px solid var(--neutral-900);
+  padding-left: 8px;
+}
+
+.history-list{
+  list-style-type: disc;
+  padding-left: 24px;
+}
+
+/*disc 實心圓
+circle 空心圓
+square 方塊
+disclosure-open 倒三角
+disclosure-closed 右三角*/
+
+
+.concept-item{
+  padding-left: 12px;
+  border-left: 3px solid var(--neutral-300);
+}
+
+.bi{
+  padding-left: 8px;
+  vertical-align: bottom;
+}
+
+.footer{
+  text-align: center;
+}
